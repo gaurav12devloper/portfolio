@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+     <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+        <title>Gaurav Prajapati</title>
+   
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light text-white z-index add-cus">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+     <!--  <span class="navbar-toggler-icon"></span> -->
+      <i class="fas fa-bars" style="color:#ffffffd2; font-size:28px;"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item px-5">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item px-5">
+          <a class="nav-link" href="#">Skills</a>
+        </li>
+        <li class="nav-item px-5">
+          <a class="nav-link" href="#">Project</a>
+        </li>
+        <li class="nav-item px-5">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="flying-object" class="flying-object">
+  </div>
+  <div class="container-fluid keep-t">
+    <div class="pos-985">
+      <div class="profile mt-5 row">
+        <!-- <video src="video/background-v.mp4" class="ml-auto mt-5 mr-auto d-block" id="resize1" autoplay="true" loop="true" muted="muted"></video> -->
+        <div class="col-sm-12 col-md-12 col-lg-4 order-1">
+          <img class="rounded-circle" src="img/gaurav.png" id="dp" alt="">
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 order-2 u-name">
+            <h1>I'm Gaurav Prajapati</h1>
+            <h1> I'm into <span id="name-det"></span></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div  class="container-fluid" id="about_me">
+      <div class="hcenter">
+          <h1>Who am I?</h1>
+      </div>
+      <p>
+          I'm a <span class="lavender_text">Student Developer</span> in Mumbai, Maharashtra
+          And I have serious passion for <span class="lavender_text">Coding</span> and <span
+              class="lavender_text">Designing.</span>
+      </p>
+      <blockquote style="font-family: raleway;">`Being Creative`</blockquote>
+  </div> 
+  <div class="container-fluid keep-backgroud text-center pb-2" id="bars">
+      <h1 class="mt-0 heaqding-s">Skills</h1>
+      <div class="tabs">
+        <button onclick="progressbar(1)" id="web-skill">Webs</button>
+        <button onclick="progressbar(2)" id="desktop-skill">Desktop</button>
+        <button onclick="progressbar(3)" id="other-skill">Other</button>
+      </div>
+      <div class="container skill-container" id="barcontainer"></div>
+  </div>
+  <div class="container-fluid pt-4 pb-3 keep-backgroud text-center custom-border" id="bars">
+    <h1 class="mt-2 heaqding-s">Project</h1>
+    <div class="tabs">
+      <button onclick="projectbar(1)" id="web-project">Webs</button>
+      <button onclick="projectbar(2)" id="desktop-project">Desktop</button>
+      <button onclick="projectbar(3)" id="other-project">Other</button>
+    </div>
+    <div class="container-fluid project-con">
+      <div class="project-container web-proj" style="background-image: url('image/ams.png');">
+          <div class="project-detail">
+              <h1>Attendance Managemenet System</h1>
+                <p>Java,JSP</p>
+                <a href="https://github.com/gaurav12devloper/attendance-management-system">Visit</a>
+          </div>
+      </div>
+      <div class="project-container web-proj" style="background-image: url('image/cms.png');">
+        <div class="project-detail">
+            <h1>Content management system</h1>
+              <p>PHP</p>
+              <a href="https://www.studyfame.com/">Visit</a>
+        </div>
+    </div>
+    <div class="project-container web-proj" style="background-image: url('image/Online-examination-website.webp');">
+      <div class="project-detail">
+          <h1>Online MCQ Examination</h1>
+            <p>PHP</p>
+            <a href="https://github.com/gaurav12devloper/quiz-website-in-php">Visit</a>
+      </div>
+  </div>
+  <div class="project-container des-proj" style="background-image: url('image/spaceshooter.PNG');">
+    <div class="project-detail">
+        <h1>SpaceShooter</h1>
+        <p>Python,Pygame</p>
+          <a href="https://github.com/gaurav12devloper/spaceshooter">visit</a>
+    </div>
+</div>
+    </div>
+</div>
+<footer>
+  <div class="container-fluid text-white">
+    <h2 class="text-center">Contact me</h2>
+    <div class="d-flex footer-head">
+      <div class="footer-link">
+        <a href="https://github.com/gaurav12devloper"><img src="image/GitHub.png" alt="GitHub" height="75px" width="75px">
+        <span>Github</span></a>
+      </div>
+      <div class="footer-link">
+        <a href="https://www.linkedin.com/in/gaurav-developer/"><img src="image/linkedin.png" alt="linkedin" height="75px" width="75px">
+        <span>Linkedin</span></a>
+      </div>
+      <div class="footer-link">
+        <a href="mailto:gauravprajapati459@gmail.com"><img src="image/gmail.png" alt="gmail" height="75px" width="75px">
+        <span>Gmail</span></a>
+      </div>
+      <div class="footer-link">
+        <a href="https://wa.me/918218158916"><img src="image/whatsapp.png" alt="whatsapp" height="75px" width="75px">
+        <span>Whatsapp</span></a>
+      </div>
+      <div class="footer-link">
+        <a href="https://www.instagram.com/gauravprajapati4945/"><img src="image/Instagram_icon.webp" alt="Instagram" height="75px" width="75px">
+        <span>Instagram</span></a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+  <script src="js/custom.js" defer></script>
+    <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>
