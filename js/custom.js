@@ -1,27 +1,4 @@
-/* function circle(){
-    var divsize = ((Math.random()*50) + 25).toFixed();
-       var color = 'lightgrey';
-       $newdiv = $('<div id="disc" class="shape"><div/>').css({
-           'width':divsize+'px',
-           'height':divsize+'px',
-}); */
-      // make position sensitive to size and document's width
-     /*  var posx = (Math.random() * ($('#flying-object').width() - divsize)).toFixed(); */
-      /* var posy = (Math.random() * ($('#block').height() - divsize)).toFixed(); */
-     /*  myArray1=['left','up','side']
-      var rand = myArray1[(Math.random() * myArray1.length) | 0]
-      $newdiv.css({
-          'position':'absolute',
-          'left':posx+'px',
-          'top':posy+'px',
-          'display':'none',
-          'animation': rand+' 3s linear',
-          'opacity':Math.random()
-      }).appendTo( '#flying-object' ).fadeIn(100).delay(1000).fadeOut(500, function(){
-        $(this).remove();
-        forDisc(); 
-      });  
-}*/
+
 $(document).ready(function () {
     circle();
     progressbar(1);

@@ -130,6 +130,11 @@ h1{
 }
 
 @media only screen and (max-width: 1000px) {
+
+    #about_me p {
+        width: 100%;
+    }
+
     .u-name{
         margin-top: 44vh;
         text-align: center !important;
@@ -155,7 +160,7 @@ h1{
        /*  width: 100% !important; */
     }
     .tabs {
-        width: 78% !important;
+        width: 84% !important;
     }
     .lan-text {
         position: absolute;
@@ -344,4 +349,12 @@ transform: scaleX(2);
 
 .des-proj {
     display: none;
+}
+.container-fluid {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.skill-container{
+    width: 100% !important;
 }
